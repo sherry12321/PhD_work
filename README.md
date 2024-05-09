@@ -15,6 +15,7 @@ Based on these findings, we propose a model that TGF-Î² and the PD-1 serve as â€
 ## Experiment design
 ### CD4 T cell scRNA scTCR
 - library 1: samples are sorted CD4+ T cells from the liver draining lymph node of 3-week old mice from the following 5 genotypes, 1 mouse per genotype, hash-tagged
+
 | Genotype                             | Abbreviation | Phenotype              |
 |--------------------------------------|--------------|------------------------|
 | wild-type                            | WT           | healthy                |
@@ -24,6 +25,7 @@ Based on these findings, we propose a model that TGF-Î² and the PD-1 serve as â€
 | Thpokcre Tgfbr2fl/fl Pdcd1-/- Cd40-/-| 3KO          | healthy (rescue)       |
 
 - library 2: samples are sorted CD4+Cd1d- T cells from the matching liver of 3-week old mice from the following 5 genotypes, 1 mouse per genotype (except RII), hash-tagged
+
 | Genotype                             | Abbreviation | Phenotype              |
 |--------------------------------------|--------------|------------------------|
 | wild-type                            | WT           | healthy                |
@@ -35,6 +37,7 @@ Based on these findings, we propose a model that TGF-Î² and the PD-1 serve as â€
 
 ### MHCII APC scRNA
 - library 3: samples are sorted MHCII+Lineage- (Tcrb-NK1.1-CD90-CD19-SiglecF-Ly6G-) APCs from the liver of 3-week old mice from the following 5 genotypes, 2 mice per genotype, hash-tagged
+
 | Genotype                             | Abbreviation | Phenotype              |
 |--------------------------------------|--------------|------------------------|
 | wild-type                            | WT           | healthy                |
