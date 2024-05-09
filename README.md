@@ -35,11 +35,11 @@ Based on these findings, we propose a model that TGF-Î² and the PD-1 serve as â€
 | Pdcd1-/-                             | PD1          | healthy                |
 | Thpokcre Tgfbr2fl/fl Pdcd1-/-        | 2KO          | lethal autoimmunity    |
 | Thpokcre Tgfbr2fl/fl Pdcd1-/- Cd40-/-| 3KO          | healthy (rescue)       |
-#### Analysis
+#### Analysis Notebooks
 - 01 Loading and concatenate samples into Anndata object 
 - 02 QC and Clean-up: rounds of clustering, annotation and cleanup of the dataset; the notebook is separated into 3 parts due to size limitation
 - 03 Transcriptomics analysis: explore the distribution of and change of gene expression in each of the control group and the 2KO; methods used including DEG (rank_gene_groups, MAST) and MiloR
-- 04 Clonality and trajectory analysis: explore clonal expansion and distribution across genotype; infer differentiation trajectories using clonality information and Palantir to explain how Th cells in 2KO causes pathologenic autoimmunity.
+- 04 Clonality and trajectory analysis: explore clonal expansion and distribution across genotype; infer differentiation trajectories using clonality information and Palantir to explain how Th cells in 2KO causes pathological autoimmunity.
 
 ### 2. MHCII APC scRNA
 #### Experiment Design
@@ -53,7 +53,7 @@ Based on these findings, we propose a model that TGF-Î² and the PD-1 serve as â€
 | Thpokcre Tgfbr2fl/fl Pdcd1-/-        | 2KO          | lethal autoimmunity    |
 | Thpokcre Tgfbr2fl/fl Pdcd1-/- Cd40-/-| 3KO          | healthy (rescue)       |
 
-#### Analysis
+#### Analysis Notebooks
 - 01 Loading, QC and Clean-up: concatenate samples into Anndata object; rounds of clustering, annotation and cleanup of the dataset
 - 02 Transcriptomics analysis: explore the distribution of cell types (Kupffer cells, monocyte-derived macrophages, DC1, DC2 and Ccr7-hi DCs), and change of gene expression in each cell type; focusing on DEG of key signature genes and pathway analysis
 
