@@ -11,3 +11,34 @@ Here, we used single-cell RNA- and TCR-sequencing to profile the Th cell populat
 In the 2KO mice, lacking both TGF-β and the PD-1 inhibitions enhanced priming and reactivation of conventional CD4+ T cells in lymph nodes and peripheral tissues, respectively, with PD-1 deficiency exacerbating T cell clonal expansion and differentiation into a population of hyperactivated T helper 1 (Th1) and follicular helper T (Tfh) cells. Furthermore, the excessive Th cell response and the ensuing autoimmunity was dependent on CD40, which was highly expressed in a population of monocyte-derive macrophages. 
 
 Based on these findings, we propose a model that TGF-β and the PD-1 serve as ‘tonic’ and ‘reactive’ regulators of peripheral Th cell tolerance, respectively, by inhibiting cellular immunity driven by CD40-expressing myeloid APCs. We also demonstrated that targeting the TGF-β pathway specifically on CD4+ T cells in combination with PD-L1 blockade significantly improve antitumor responses in a low mutational burden hepatocellular carcinoma mouse model, showing that such a Th cell-intrinsic control module can be targeted to revive protective immunity in cancer and chronic infections.
+
+## Experiment design
+### CD4 T cell scRNA scTCR
+- library 1: samples are sorted CD4+ T cells from the liver draining lymph node of 3-week old mice from the following 5 genotypes, 1 mouse per genotype, hash-tagged
+| Genotype                             | Abbreviation | Phenotype              |
+|--------------------------------------|--------------|------------------------|
+| wild-type                            | WT           | healthy                |
+| Thpokcre Tgfbr2fl/fl                 | RII          | healthy                |
+| Pdcd1-/-                             | PD1          | healthy                |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/-        | 2KO          | lethal autoimmunity    |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/- Cd40-/-| 3KO          | healthy (rescue)       |
+
+- library 2: samples are sorted CD4+Cd1d- T cells from the matching liver of 3-week old mice from the following 5 genotypes, 1 mouse per genotype (except RII), hash-tagged
+| Genotype                             | Abbreviation | Phenotype              |
+|--------------------------------------|--------------|------------------------|
+| wild-type                            | WT           | healthy                |
+| Thpokcre Tgfbr2fl/fl                 | RII_1 (few cells)| healthy            |
+| Thpokcre Tgfbr2fl/fl                 | RII_2        | healthy                |
+| Pdcd1-/-                             | PD1          | healthy                |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/-        | 2KO          | lethal autoimmunity    |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/- Cd40-/-| 3KO          | healthy (rescue)       |
+
+### MHCII APC scRNA
+- library 3: samples are sorted MHCII+Lineage- (Tcrb-NK1.1-CD90-CD19-SiglecF-Ly6G-) APCs from the liver of 3-week old mice from the following 5 genotypes, 2 mice per genotype, hash-tagged
+| Genotype                             | Abbreviation | Phenotype              |
+|--------------------------------------|--------------|------------------------|
+| wild-type                            | WT           | healthy                |
+| Thpokcre Tgfbr2fl/fl                 | RII          | healthy                |
+| Pdcd1-/-                             | PD1          | healthy                |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/-        | 2KO          | lethal autoimmunity    |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/- Cd40-/-| 3KO          | healthy (rescue)       |
