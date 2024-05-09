@@ -56,3 +56,21 @@ Based on these findings, we propose a model that TGF-Î² and the PD-1 serve as â€
 #### Analysis
 - 01 Loading, QC and Clean-up: concatenate samples into Anndata object; rounds of clustering, annotation and cleanup of the dataset
 - 02 Transcriptomics analysis: explore the distribution of cell types (Kupffer cells, monocyte-derived macrophages, DC1, DC2 and Ccr7-hi DCs), and change of gene expression in each cell type; focusing on DEG of key signature genes and pathway analysis
+
+### 3. Multicolor flowcytometry analysis
+#### Experiment Design
+- In this single experiment, I analyzed the following 6 groups with 3 mice per group for 3 panels, which are lymph node T cell panel, liver T cell panel and liver APC panel, respectively. Each panel has ~ 20 markers. The data was acquired using Cytek Aurora.
+
+| Genotype                             | Abbreviation | Phenotype              |
+|--------------------------------------|--------------|------------------------|
+| wild-type                            | WT           | healthy                |
+| Thpokcre Tgfbr2fl/fl                 | RII          | healthy                |
+| Pdcd1-/-                             | PD1          | healthy                |
+| Thpokcre Tgfbr2fl/fl Pdcd1-/-        | 2KO          | lethal autoimmunity    |
+| Cd274-/-                             | PDL1         | healthy                |
+| Thpokcre Tgfbr2fl/fl Cd274-/-        | PDL12KO      | lethal autoimmunity    |
+
+#### Analysis
+The traditional method to analyze flowcytometry data via FlowJo is time consuming and has limitations in exploring high dimental datasets. As an immunologist who deals with multicolor flowcytometry data on a daily basis, inspired by the methods described in https://immunedynamics.io/spectre/simple-discovery/ and the convenient Python single cell analysis ecosystem, I developed this pipeline to perform exploratory data anlysis of flowcytometry data with the large panels and multiple groups in Scanpy. This pipeline greatly improved my productivity and allowed me to indentify patterns and trends not obvious in traditional Flowjo--> Prism analysis.
+
+Here is a showcase example of the analysis of one large experiment. The data and intermediate files are not provided due to size limitations. 
